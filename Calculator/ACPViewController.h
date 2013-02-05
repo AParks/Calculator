@@ -8,6 +8,18 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ACPViewController : UIViewController
+@interface ACPViewController : UIViewController{
+    IBOutlet UILabel *calculatorScreen;
+    float result;
+    int currentOperation;
+    float currentNumber;
+}
+
+- (IBAction) calculate;
+- (IBAction) clear;
+- (IBAction) buttonDigitPressed:(id)sender;
+- (IBAction) buttonOperationPressed:(id)sender;
+
+
 
 @end
