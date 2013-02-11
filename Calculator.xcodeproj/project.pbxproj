@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6F092E2016C58E4B0028846B /* ACPStack.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F092E1F16C58E4B0028846B /* ACPStack.m */; };
 		6F43251B16BD6B100054CA23 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6F43251A16BD6B100054CA23 /* UIKit.framework */; };
 		6F43251D16BD6B100054CA23 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6F43251C16BD6B100054CA23 /* Foundation.framework */; };
 		6F43251F16BD6B100054CA23 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6F43251E16BD6B100054CA23 /* CoreGraphics.framework */; };
@@ -22,6 +23,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		6F092E1E16C58E4B0028846B /* ACPStack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ACPStack.h; sourceTree = "<group>"; };
+		6F092E1F16C58E4B0028846B /* ACPStack.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ACPStack.m; sourceTree = "<group>"; };
 		6F43251716BD6B100054CA23 /* Calculator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Calculator.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6F43251A16BD6B100054CA23 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		6F43251C16BD6B100054CA23 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -85,6 +88,8 @@
 		6F43252016BD6B100054CA23 /* Calculator */ = {
 			isa = PBXGroup;
 			children = (
+				6F092E1E16C58E4B0028846B /* ACPStack.h */,
+				6F092E1F16C58E4B0028846B /* ACPStack.m */,
 				6F43253F16C083E70054CA23 /* honey_im_subtle.png */,
 				6F43252916BD6B100054CA23 /* ACPAppDelegate.h */,
 				6F43252A16BD6B100054CA23 /* ACPAppDelegate.m */,
@@ -181,6 +186,7 @@
 				6F43252716BD6B100054CA23 /* main.m in Sources */,
 				6F43252B16BD6B100054CA23 /* ACPAppDelegate.m in Sources */,
 				6F43253716BD6B110054CA23 /* ACPViewController.m in Sources */,
+				6F092E2016C58E4B0028846B /* ACPStack.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -303,6 +309,7 @@
 				6F43253C16BD6B110054CA23 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
