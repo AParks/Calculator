@@ -124,7 +124,13 @@
         
         else if ([obj isKindOfClass:[NSString class]]){
             float first = [[self.stack pop] floatValue];
-            float second = [[self.stack pop] floatValue];
+            float second;
+            id s = [self.stack pop];
+            if (s == nil)
+                second = first;
+            else
+                second = [s floatValue];
+            
             if ([obj isEqualToString:@"+"])
                 self.result = first + second;
             
