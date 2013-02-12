@@ -15,6 +15,12 @@
 
 @property (nonatomic) BOOL equalsPreviouslyPressed;
 
+@property (nonatomic) NSMutableString * currentNumber;
+@property (nonatomic) NSMutableArray * infix;
+@property (nonatomic) NSMutableArray * postfix;
+@property (nonatomic) ACPStack * stack;
+@property float result;
+
 -(BOOL)higherPrecedence:(NSString *) stackOp :(NSString *) currentOp;
 -(void )handleOperator:(NSString *) operator;
 -(void)infixToPostFix;
@@ -178,6 +184,10 @@
 }
 
 -(IBAction)buttonDigitPressed:(id)sender{
+    for (UIButton *button in self.opButtons)
+        [button setEnabled:YES];
+    
+    
     if(self.equalsPreviouslyPressed && [sender tag] != 11){
         [self.currentNumber setString:@""];
         [self.infix removeAllObjects];
@@ -185,9 +195,6 @@
     }
     
         
-    for (UIButton *button in self.opButtons)
-        [button setEnabled:YES];
-    
     switch([sender tag]){
         case 10:
             [self.currentNumber appendString:@"."];
@@ -199,7 +206,6 @@
             
             //add negative sign
             else{
-                NSLog(@"waaa");
                 NSString * temp = [[NSString alloc] initWithString:self.currentNumber];
                 [self.currentNumber setString:@""];
                 [self.currentNumber appendString:@"-"];

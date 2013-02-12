@@ -357,6 +357,7 @@
                         <outletCollection property="opButtons" destination="y0L-zC-5th" id="aBU-Q0-Bi7"/>
                         <outletCollection property="opButtons" destination="crx-cc-aQD" id="v38-fD-mos"/>
                         <outletCollection property="opButtons" destination="ggb-1m-UGh" id="DoA-Nk-jLs"/>
+                        <outletCollection property="opButtons" destination="gs6-VM-Vno" id="y6c-mI-3Xp"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4" sceneMemberID="firstResponder"/>
@@ -365,17 +366,6 @@
         </scene>
     </scenes>
     <classes>
-        <class className="ACPViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/ACPViewController.h"/>
-            <relationships>
-                <relationship kind="action" name="buttonDigitPressed:"/>
-                <relationship kind="action" name="buttonOperationPressed:"/>
-                <relationship kind="action" name="clear"/>
-                <relationship kind="outlet" name="calculatorScreen" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="screenView" candidateClass="UIView"/>
-                <relationship kind="outletCollection" name="opButtons" candidateClass="UIButton"/>
-            </relationships>
-        </class>
         <class className="FirstResponder">
             <source key="sourceIdentifier" type="user"/>
             <relationships>
