@@ -17,16 +17,16 @@
          landmarkType = "2">
       </FileBreakpoint>
       <FileBreakpoint
-         shouldBeEnabled = "Yes"
+         shouldBeEnabled = "No"
          ignoreCount = "0"
          continueAfterRunningActions = "No"
          filePath = "Calculator/ACPViewController.m"
-         timestampString = "382297826.179196"
+         timestampString = "382336076.134581"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "70"
-         endingLineNumber = "70"
-         landmarkName = "-handleOperator:"
+         startingLineNumber = "135"
+         endingLineNumber = "135"
+         landmarkName = "-calculate"
          landmarkType = "5">
       </FileBreakpoint>
    </FileBreakpoints>

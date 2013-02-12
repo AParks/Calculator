@@ -13,6 +13,8 @@
 
 @interface ACPViewController ()
 
+@property (nonatomic) BOOL equalsPreviouslyPressed;
+
 -(BOOL)higherPrecedence:(NSString *) stackOp :(NSString *) currentOp;
 -(void )handleOperator:(NSString *) operator;
 -(void)infixToPostFix;
@@ -34,6 +36,9 @@
     self.postfix = [[NSMutableArray alloc] init];
     self.currentNumber = [[NSMutableString alloc] init];
     self.screenView.layer.cornerRadius = 8;
+    
+    for (UIButton *button in self.opButtons)
+        [button setEnabled:NO];
 }
 
 - (void)didReceiveMemoryWarning
@@ -117,18 +122,23 @@
             if ([obj isEqualToString:@"+"])
                 self.result = first + second;
             
-            if ([obj isEqualToString:@"-"])
+            else if ([obj isEqualToString:@"-"])
                 self.result = second - first;
             
-            if ([obj isEqualToString:@"*"])
+            else if ([obj isEqualToString:@"*"])
                 self.result = first * second;
 
-            if ([obj isEqualToString:@"/"])
+            else if ([obj isEqualToString:@"/"])
                 self.result = second/first;
             
+            else if ([obj isEqualToString:@"^"])
+                self.result = pow (second, first);
+                     
             [self.stack push:[NSNumber numberWithFloat:self.result]];
         }
     }
+    
+    [self.stack clear];
 }
 
 #pragma mark - UI Logic
@@ -142,6 +152,7 @@
             self.calculatorScreen.text = [NSString stringWithFormat:@"%2f", self.result];
             [self.currentNumber setString:self.calculatorScreen.text];
             [self.infix addObject:[NSNumber numberWithFloat:[self.currentNumber floatValue]]];
+            self.equalsPreviouslyPressed = YES;
             return;
         case 11:
             [self.infix addObject:@"+"];
@@ -155,7 +166,10 @@
         case 14:
             [self.infix addObject:@"/"];
             break;
+        case 15:
+            [self.infix addObject:@"^"];
     }
+    self.equalsPreviouslyPressed = NO;
     for (UIButton *button in self.opButtons)
         [button setEnabled:NO];
     [self.currentNumber setString:@""];
@@ -164,6 +178,13 @@
 }
 
 -(IBAction)buttonDigitPressed:(id)sender{
+    if(self.equalsPreviouslyPressed && [sender tag] != 11){
+        [self.currentNumber setString:@""];
+        [self.infix removeAllObjects];
+        self.equalsPreviouslyPressed = NO;
+    }
+    
+        
     for (UIButton *button in self.opButtons)
         [button setEnabled:YES];
     
@@ -178,6 +199,7 @@
             
             //add negative sign
             else{
+                NSLog(@"waaa");
                 NSString * temp = [[NSString alloc] initWithString:self.currentNumber];
                 [self.currentNumber setString:@""];
                 [self.currentNumber appendString:@"-"];

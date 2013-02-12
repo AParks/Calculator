@@ -14,11 +14,11 @@
     @property (weak, nonatomic) IBOutlet UIView *screenView;
     @property (strong, nonatomic) IBOutletCollection(UIButton) NSArray *opButtons;
 
-@property (nonatomic) NSMutableString * currentNumber;
-@property (nonatomic) NSMutableArray * infix;
-@property (nonatomic) NSMutableArray * postfix;
-@property (nonatomic) ACPStack * stack;
-@property float result;
+    @property (nonatomic) NSMutableString * currentNumber;
+    @property (nonatomic) NSMutableArray * infix;
+    @property (nonatomic) NSMutableArray * postfix;
+    @property (nonatomic) ACPStack * stack;
+    @property float result;
 
 - (void) calculate;
 - (IBAction) clear;
