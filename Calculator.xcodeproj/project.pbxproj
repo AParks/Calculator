@@ -19,7 +19,7 @@
 		6F43253116BD6B110054CA23 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6F43253016BD6B110054CA23 /* Default-568h@2x.png */; };
 		6F43253416BD6B110054CA23 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6F43253216BD6B110054CA23 /* MainStoryboard.storyboard */; };
 		6F43253716BD6B110054CA23 /* ACPViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F43253616BD6B110054CA23 /* ACPViewController.m */; };
-		6F43254016C083E70054CA23 /* honey_im_subtle.png in Resources */ = {isa = PBXBuildFile; fileRef = 6F43253F16C083E70054CA23 /* honey_im_subtle.png */; };
+		6F4E9E8C16F1F18200764D7E /* honey_im_subtle.png in Resources */ = {isa = PBXBuildFile; fileRef = 6F4E9E8B16F1F18200764D7E /* honey_im_subtle.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -41,7 +41,7 @@
 		6F43253316BD6B110054CA23 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
 		6F43253516BD6B110054CA23 /* ACPViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ACPViewController.h; sourceTree = "<group>"; };
 		6F43253616BD6B110054CA23 /* ACPViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ACPViewController.m; sourceTree = "<group>"; };
-		6F43253F16C083E70054CA23 /* honey_im_subtle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = honey_im_subtle.png; path = ../../../../Pictures/honey_im_subtle/honey_im_subtle.png; sourceTree = "<group>"; };
+		6F4E9E8B16F1F18200764D7E /* honey_im_subtle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = honey_im_subtle.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,7 +90,6 @@
 			children = (
 				6F092E1E16C58E4B0028846B /* ACPStack.h */,
 				6F092E1F16C58E4B0028846B /* ACPStack.m */,
-				6F43253F16C083E70054CA23 /* honey_im_subtle.png */,
 				6F43252916BD6B100054CA23 /* ACPAppDelegate.h */,
 				6F43252A16BD6B100054CA23 /* ACPAppDelegate.m */,
 				6F43253216BD6B110054CA23 /* MainStoryboard.storyboard */,
@@ -104,6 +103,7 @@
 		6F43252116BD6B100054CA23 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				6F4E9E8B16F1F18200764D7E /* honey_im_subtle.png */,
 				6F43252216BD6B100054CA23 /* Calculator-Info.plist */,
 				6F43252316BD6B100054CA23 /* InfoPlist.strings */,
 				6F43252616BD6B100054CA23 /* main.m */,
@@ -172,7 +172,7 @@
 				6F43252F16BD6B110054CA23 /* Default@2x.png in Resources */,
 				6F43253116BD6B110054CA23 /* Default-568h@2x.png in Resources */,
 				6F43253416BD6B110054CA23 /* MainStoryboard.storyboard in Resources */,
-				6F43254016C083E70054CA23 /* honey_im_subtle.png in Resources */,
+				6F4E9E8C16F1F18200764D7E /* honey_im_subtle.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
